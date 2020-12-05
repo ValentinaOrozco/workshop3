@@ -1,0 +1,16 @@
+{
+    "name": "workshop3",
+    "version": "0.1.0",
+    "description": "node.js project eam",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "keywords": [
+        "javasript",
+        "node.js",
+        "backend"
+    ],
+    "author": "Valentina Orozco",
+    "license": "ISC"
+  }
