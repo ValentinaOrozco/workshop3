@@ -3,6 +3,7 @@ const express = require('express'); // importamos el framework express.js
 const app = express(); //creamos una variable que acceda a express()
 const port = 3000; // creamos una variable para definir el puerto
 
+//
 // nos traemos de express el método get para retornar una respuesta
 // cuando el cliente ingrese a la ruta '/'
 app.get('/', (req, res) => {
