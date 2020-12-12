@@ -12,5 +12,11 @@
         "backend"
     ],
     "author": "Valentina Orozco",
-    "license": "ISC"
-  }
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "pug": "^3.0.0"
+    }
+}

@@ -1,0 +1,20 @@
+.img-title {
+  width: 20%;/*coloquen el tamaño a gusto*/
+}
+
+/* section {
+  display: grid;
+  grid-template: auto / repeat(3, 33%);
+} */
+
+article {
+  /* border: 1px solid gray; */
+  /* margin: 1em; */
+  /* padding: 0.5em; */
+  text-align: center;
+}
+
+/* main {
+  display: flex;
+  flex-direction: row;
+} */

@@ -1,18 +1,25 @@
+const express = require('express');
+const app = express();
+const port = 3000;
 
-const express = require('express'); // importamos el framework express.js
-const app = express(); //creamos una variable que acceda a express()
-const port = 3000; // creamos una variable para definir el puerto
+const data = require('./database/data.json');
 
-//
-// nos traemos de express el método get para retornar una respuesta
-// cuando el cliente ingrese a la ruta '/'
+app.set('view engine', 'pug');
+app.use(express.static(__dirname + '/public'));
+
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  res.render('index', {
+    data: data.albums
+  });
 });
 
-// nos traemos de express el método listen para levantar el proyecto
-// en el puerto definido
+app.get('/albums', (req, res) => {
+  const item = data.albums.find(p => p.id === req.query.id);
+  res.render('albums', {
+    item
+  });
+});
 
 app.listen(port, () => {
-  console.log(`workshop3 project ru on listening at http://localhost:${port}`);
+  console.log(`Server running at http://localhost:${port}`);
 });
